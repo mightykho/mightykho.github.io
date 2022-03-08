@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
 <body>
-  <script type=“text/javascript” src=“https://www.carwow.co.uk/car-valuation-widget.js” defer></script>
-  <carwow-widget action=“https://carwow-uk.pxf.io/LPr7qM” custom-css=“./styles.css” /></carwow-widget>
+  <style>
+    body {
+      background: #ccc;
+    }
+  </style>
+  <script type="text/javascript" src="https://www.carwow.co.uk/car-valuation-widget.js" defer></script>
+
+  <h1>Default</h1>
+  <div class="widget-wrapper">
+    <carwow-widget action="https://carwow-uk.pxf.io/LPr7qM" custom-css="./styles.css" /></carwow-widget>
+  </div>
+
+  <h1>Default in a limited space</h1>
+  <div class="widget-wrapper" style="width: 600px;">
+    <carwow-widget action="https://carwow-uk.pxf.io/LPr7qM" custom-css="./styles.css" /></carwow-widget>
+  </div>
+
+  <h1>Compact</h1>
+  <div class="widget-wrapper" style="">
+    <carwow-widget action="https://carwow-uk.pxf.io/LPr7qM" compact-version="true" custom-css="./styles.css" /></carwow-widget>
+  </div>
+
+  <h1>Compact in a limited space</h1>
+  <div class="widget-wrapper" style="width: 600px;">
+    <carwow-widget action="https://carwow-uk.pxf.io/LPr7qM" compact-version="true" custom-css="./styles.css" /></carwow-widget>
+  </div>
 </body>
 </html>
 
